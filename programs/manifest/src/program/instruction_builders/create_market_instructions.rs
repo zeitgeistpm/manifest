@@ -6,6 +6,7 @@ use solana_program::{
     pubkey::Pubkey,
     system_instruction, system_program,
     sysvar::rent::Rent,
+    sysvar::instructions,
 };
 
 /// Creates the account and populates it with rent.
@@ -48,6 +49,7 @@ pub fn create_market_instruction(
             AccountMeta::new(quote_vault, false),
             AccountMeta::new_readonly(spl_token::id(), false),
             AccountMeta::new_readonly(spl_token_2022::id(), false),
+            AccountMeta::new_readonly(instructions::ID, false),
         ],
         data: [ManifestInstruction::CreateMarket.to_vec()].concat(),
     }

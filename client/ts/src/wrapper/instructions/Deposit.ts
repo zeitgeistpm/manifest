@@ -77,7 +77,7 @@ export const depositInstructionDiscriminator = 2;
 export function createDepositInstruction(
   accounts: DepositInstructionAccounts,
   args: DepositInstructionArgs,
-  programId = new web3.PublicKey('wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL'),
+  programId = new web3.PublicKey('3rCLCzJkLq9samFyzFsmeUV1BnJRZ14KBqUvM8MvNfVA'),
 ) {
   const [data] = DepositStruct.serialize({
     instructionDiscriminator: depositInstructionDiscriminator,

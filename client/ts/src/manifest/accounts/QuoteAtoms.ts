@@ -74,7 +74,7 @@ export class QuoteAtoms implements QuoteAtomsArgs {
    */
   static gpaBuilder(
     programId: web3.PublicKey = new web3.PublicKey(
-      'MNFSTqtC93rEfYHB6hF82sKdZpUDFWkViLByLd1k1Ms',
+      'A6wH2LfJogmERLARqF75pH2Yu5Gh1t6Nzmt9nkMU9cDA',
     ),
   ) {
     return beetSolana.GpaBuilder.fromStruct(programId, quoteAtomsBeet);

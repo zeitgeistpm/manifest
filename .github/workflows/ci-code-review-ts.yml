@@ -107,7 +107,7 @@ jobs:
       - name: Start validator
         run: |
           cargo build-sbf
-          solana-test-validator --bpf-program MNFSTqtC93rEfYHB6hF82sKdZpUDFWkViLByLd1k1Ms target/deploy/manifest.so --bpf-program UMnFStVeG1ecZFc2gc5K3vFy3sMpotq8C91mXBQDGwh target/deploy/ui_wrapper.so --bpf-program wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL target/deploy/wrapper.so  >/dev/null 2>&1 &
+          solana-test-validator --bpf-program A6wH2LfJogmERLARqF75pH2Yu5Gh1t6Nzmt9nkMU9cDA target/deploy/manifest.so --bpf-program UMnFStVeG1ecZFc2gc5K3vFy3sMpotq8C91mXBQDGwh target/deploy/ui_wrapper.so --bpf-program 3rCLCzJkLq9samFyzFsmeUV1BnJRZ14KBqUvM8MvNfVA target/deploy/wrapper.so  >/dev/null 2>&1 &
           echo "Started test validator, sleeping for 15 seconds before starting"
           sleep 15
 

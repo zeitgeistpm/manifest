@@ -95,7 +95,7 @@ export const batchUpdateInstructionDiscriminator = 4;
 export function createBatchUpdateInstruction(
   accounts: BatchUpdateInstructionAccounts,
   args: BatchUpdateInstructionArgs,
-  programId = new web3.PublicKey('wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL'),
+  programId = new web3.PublicKey('3rCLCzJkLq9samFyzFsmeUV1BnJRZ14KBqUvM8MvNfVA'),
 ) {
   const [data] = BatchUpdateStruct.serialize({
     instructionDiscriminator: batchUpdateInstructionDiscriminator,

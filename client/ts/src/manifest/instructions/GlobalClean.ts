@@ -68,7 +68,7 @@ export const globalCleanInstructionDiscriminator = 12;
 export function createGlobalCleanInstruction(
   accounts: GlobalCleanInstructionAccounts,
   args: GlobalCleanInstructionArgs,
-  programId = new web3.PublicKey('MNFSTqtC93rEfYHB6hF82sKdZpUDFWkViLByLd1k1Ms'),
+  programId = new web3.PublicKey('A6wH2LfJogmERLARqF75pH2Yu5Gh1t6Nzmt9nkMU9cDA'),
 ) {
   const [data] = GlobalCleanStruct.serialize({
     instructionDiscriminator: globalCleanInstructionDiscriminator,

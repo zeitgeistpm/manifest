@@ -43,7 +43,7 @@ export const createWrapperInstructionDiscriminator = 0;
  */
 export function createCreateWrapperInstruction(
   accounts: CreateWrapperInstructionAccounts,
-  programId = new web3.PublicKey('wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL'),
+  programId = new web3.PublicKey('3rCLCzJkLq9samFyzFsmeUV1BnJRZ14KBqUvM8MvNfVA'),
 ) {
   const [data] = CreateWrapperStruct.serialize({
     instructionDiscriminator: createWrapperInstructionDiscriminator,

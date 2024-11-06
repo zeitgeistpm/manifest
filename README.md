@@ -19,6 +19,38 @@ No more expensive rent to start a market.
 Capital efficiency built-in.
 Maximal freedom to exchange risk.
 
+## OPM manifest program id
+
+```
+A6wH2LfJogmERLARqF75pH2Yu5Gh1t6Nzmt9nkMU9cDA
+```
+
+## OPM wrapper program id
+
+```
+3rCLCzJkLq9samFyzFsmeUV1BnJRZ14KBqUvM8MvNfVA
+```
+
+## Install solana-verify to produce a verifiable build
+
+```bash
+cargo install solana-verify
+```
+
+## OPM devnet deployment build
+
+```bash
+solana-verify build --library-name manifest --url devnet -- --features restricted-market-creation
+solana-verify build --library-name wrapper --url devnet
+```
+
+## OPM mainnet deployment build
+
+```bash
+solana-verify build --library-name manifest --url mainnet-beta -- --features restricted-market-creation
+solana-verify build --library-name wrapper --url mainnet-beta
+```
+
 ## Whitepaper
 
 Read [The Orderbook Manifesto](https://manifest.trade/whitepaper.pdf)

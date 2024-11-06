@@ -75,7 +75,7 @@ export const globalEvictInstructionDiscriminator = 11;
 export function createGlobalEvictInstruction(
   accounts: GlobalEvictInstructionAccounts,
   args: GlobalEvictInstructionArgs,
-  programId = new web3.PublicKey('MNFSTqtC93rEfYHB6hF82sKdZpUDFWkViLByLd1k1Ms'),
+  programId = new web3.PublicKey('A6wH2LfJogmERLARqF75pH2Yu5Gh1t6Nzmt9nkMU9cDA'),
 ) {
   const [data] = GlobalEvictStruct.serialize({
     instructionDiscriminator: globalEvictInstructionDiscriminator,

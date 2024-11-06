@@ -80,7 +80,7 @@ export const batchUpdateQuoteGlobalInstructionDiscriminator = 6;
 export function createBatchUpdateQuoteGlobalInstruction(
   accounts: BatchUpdateQuoteGlobalInstructionAccounts,
   args: BatchUpdateQuoteGlobalInstructionArgs,
-  programId = new web3.PublicKey('wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL'),
+  programId = new web3.PublicKey('3rCLCzJkLq9samFyzFsmeUV1BnJRZ14KBqUvM8MvNfVA'),
 ) {
   const [data] = BatchUpdateQuoteGlobalStruct.serialize({
     instructionDiscriminator: batchUpdateQuoteGlobalInstructionDiscriminator,
